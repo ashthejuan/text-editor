@@ -1,0 +1,102 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+  .editor-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .editor-title {
+    text-align: center;
+    margin: 10px 0;
+    padding: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .toolbar button {
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .toolbar button:hover {
+    background-color: #3546dc;
+    border: 1px solid #ccc;
+    color: white;
+  }
+  
+  .toolbar button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .toolbar select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .editor {
+    padding: 15px;
+    min-height: 300px;
+    line-height: 1.5;
+    overflow-y: auto;
+    background-color: white;
+    outline: none;
+  }
+  
+  .status-bar {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 12px;
+    text-align: right;
+  }
+  
+  .color-picker {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .save-button {
+    margin:auto;
+    margin-top: 5px;
+  }
